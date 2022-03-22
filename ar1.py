@@ -43,7 +43,41 @@ music/  Top-level package
  filters/ Subpackage for filters __init__.py equalizer.py vocoder.py karaoke.py ...
 Источник: https://pythonim.ru/osnovy/package-python
 #-3-----------------------------------------------
+# числа Армстронга
+>>> for i in range(10000000):
+ st = int(len(str(i)))
+ ss = 0
+ for j in range(st):
+  ss = ss + int(str(i)[j])**st
+ if ss == i: print(str(i))
 
+ 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+153
+370
+371
+407
+1634
+8208
+9474
+54748
+92727
+93084
+548834
+1741725
+4210818
+9800817
+9926315
+>>>
 #-4-----------------------------------------------
 
 #-5-----------------------------------------------
